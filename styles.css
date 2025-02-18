@@ -1,0 +1,65 @@
+/* Skip to Main Content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar a:hover {
+    color: #FFD700;
+    transition: 0.3s;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Images with Box Model */
+img {
+    border: 3px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+/* nth-child selector */
+.company:nth-child(even) img {
+    border-radius: 50px;
+}
+
+/* Hover Effect */
+img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
